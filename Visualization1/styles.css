@@ -1,0 +1,47 @@
+body {
+    background: #215a99;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+}
+#YearHeader {
+padding-top: 100px;}
+
+button, select {
+
+    padding: 7px;
+    background-color: lightgray;
+    border: thin solid black;
+    color: black;
+    border-radius: 4px;
+}
+
+h1 {
+    color: #41ab5d;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+#countryInfo{
+    color: lightgreen;
+}
+#countryInfoHeader{
+padding-top: 50px;
+}
+
+#inputs.h1 {
+    float: left;
+    width: 300px;
+    color: lightgreen;
+}
+
+#mapContainer {
+    float: left;
+    width: 800px;
+}
+p{
+    color: yellowgreen;
+}
+a{
+    color: cyan;
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Data Visualization 1: Malachi Coan</title>
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="map.js"></script>
+
+</head>
+<body onload = "showMap(1950)">
+
+<!-- Create an element where the map will take place -->
+<!-- I changed the map size -->
+<div id="mapContainer">
+    <svg id="map" width="800" height="550"></svg>
+</div>
+<div id="inputs">
+    <h1>Population Density</h1>
+
+    <p>Visualizing population density in the countries of the world.
+        <br> Select a year to see a map of relative population density.
+        <br> Hover over country to see its population density.</p>
+    <h1 id="YearHeader">Select a Year:</h1>&nbsp;
+    <select name="year" id="year">
+        <option value="1950">1950</option>
+        <option value="1985">1985</option>
+        <option value="2005">2005</option>
+        <option value="2020">2020</option>
+    </select>&nbsp;
+    <button onClick="showMap(document.getElementById('year').value);" id="showMapButton">Show Map!</button>
+    <!-- The mouseOver functions write the data to this div -->
+    <h1 id="countryInfoHeader">Population Density of Country:</h1>
+
+    <div id= "countryInfo"></div>
+
+    <p><a href="../main.html">Back to Main</a></p>
+</div>
+</body>
+</html>
