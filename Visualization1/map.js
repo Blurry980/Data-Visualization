@@ -28,7 +28,7 @@ function showMap(year) {
     d3.queue()
         .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
         // Serving from my domain to avoid cross-origin errors
-        .defer(d3.csv, "http://MalachiCoan.com/WPP2019_POP_F06_POPULATION_DENSITY.csv", function (d) {
+        .defer(d3.csv, "https://blurry980.github.io/Data-Visualization/Visualization1/WPP2019_POP_F06_POPULATION_DENSITY.csv", function (d) {
             data.set(d.country, +d[year]);
         })
         .await(ready);
